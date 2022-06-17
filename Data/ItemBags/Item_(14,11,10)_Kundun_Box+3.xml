@@ -18,7 +18,7 @@
 <Ruud GainRate="0" MinValue="1" MaxValue="10" />
 
 <DropAllow DW="1" DK="1" ELF="1" MG="1" DL="1" SU="1" RF="1" GL="1" RW="1" SLA="1" GC="1" LW="1" LM="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
-	<Drop Rate="700" Count="1">
+	<Drop Rate="700" Type="0" Count="1">
 		<!--Sword of Destruction-->
 		<Item Cat="0" Index="16" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<!--Dark Breaker-->
@@ -38,7 +38,7 @@
 		<!--Book of Neil-->
 		<Item Cat="5" Index="22" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="540" Count="1">
+	<Drop Rate="540" Type="0" Count="1">
 		<!--Dark Phoenix Helm-->
 		<Item Cat="7" Index="17" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<!--Dark Phoenix Armor-->
@@ -112,7 +112,7 @@
 		<!--Grand Soul Shield-->
 		<Item Cat="6" Index="15" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="800" Count="1">
+	<Drop Rate="800" Type="0" Count="1">
 		<!--Ring of Ice-->
 		<Item Cat="13" Index="8" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<!--Ring of Poison-->
@@ -138,7 +138,7 @@
 		<!--Pendant of Ability-->
 		<Item Cat="13" Index="28" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="250" Count="1">
+	<Drop Rate="250" Type="0" Count="1">
 		<!--Jewel of Soul-->
 		<Item Cat="14" Index="14" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<!--Jewel of Bless-->

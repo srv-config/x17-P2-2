@@ -18,7 +18,7 @@
 <Ruud GainRate="0" MinValue="1" MaxValue="10" />
 
 <DropAllow DW="1" DK="1" ELF="1" MG="1" DL="1" SU="1" RF="1" GL="1" RW="1" SLA="1" GC="1" LW="1" LM="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
-	<Drop Rate="7000" Count="1"> <!-- Weapons -->
+	<Drop Rate="7000" Type="0" Count="1"> <!-- Weapons -->
 		<Item Cat="1" Index="6" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Nikea Axe -->
 		<Item Cat="1" Index="7" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Larkan Axe -->
 		<Item Cat="2" Index="3" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Great Hammer -->
@@ -38,14 +38,14 @@
 		<Item Cat="5" Index="17" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Ancient Stick -->
 		<Item Cat="2" Index="9" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Master Scepter -->
 	</Drop>
-	<Drop Rate="5000" Count="1"> <!-- Shields -->
+	<Drop Rate="5000" Type="0" Count="1"> <!-- Shields -->
 		<Item Cat="6" Index="5" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Dragon Slayer Shield -->
 		<Item Cat="6" Index="31" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Alacran Shield -->
 		<Item Cat="6" Index="14" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Legendary Shield -->
 		<Item Cat="6" Index="12" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Bronze Shield -->
 		<Item Cat="6" Index="13" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Dragon Shield -->
 	</Drop>
-	<Drop Rate="3000" Count="1"> <!-- Armors -->
+	<Drop Rate="3000" Type="0" Count="1"> <!-- Armors -->
 		<Item Cat="7" Index="1" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Dragon Helm -->
 		<Item Cat="8" Index="1" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Dragon Armor -->
 		<Item Cat="9" Index="1" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Dragon Pants -->

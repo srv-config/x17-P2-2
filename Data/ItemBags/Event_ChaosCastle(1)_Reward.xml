@@ -18,13 +18,13 @@
 <Ruud GainRate="0" MinValue="1" MaxValue="10" />
 
 <DropAllow DW="1" DK="1" ELF="1" MG="1" DL="1" SU="1" RF="1" GL="1" RW="1" SLA="1" GC="1" LW="1" LM="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
-	<Drop Rate="1000" Count="1">
+	<Drop Rate="1000" Type="0" Count="1">
 		<Item Cat="14" Index="14" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="2000" Count="1">
+	<Drop Rate="2000" Type="0" Count="1">
 		<Item Cat="14" Index="13" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="1350" Count="1">
+	<Drop Rate="1350" Type="0" Count="1">
 		<Item Cat="8" Index="21" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="7" Index="22" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="8" Index="22" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -40,7 +40,7 @@
 		<Item Cat="10" Index="28" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="11" Index="28" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="1150" Count="1">
+	<Drop Rate="1150" Type="0" Count="1">
 		<Item Cat="7" Index="21" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="9" Index="21" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="10" Index="21" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -48,7 +48,7 @@
 		<Item Cat="11" Index="24" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="8" Index="24" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="500" Count="1">
+	<Drop Rate="500" Type="0" Count="1">
 		<Item Cat="4" Index="19" ItemMinLevel="0" ItemMaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="5" Index="9" ItemMinLevel="0" ItemMaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="4" Index="20" ItemMinLevel="0" ItemMaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -69,7 +69,7 @@
 		<Item Cat="10" Index="42" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="11" Index="42" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="885" Count="1">
+	<Drop Rate="885" Type="0" Count="1">
 		<Item Cat="7" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="8" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="9" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -100,19 +100,19 @@
 		<Item Cat="10" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="11" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="1300" Count="1">
+	<Drop Rate="1300" Type="0" Count="1">
 		<Item Cat="13" Index="1" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="14" Index="13" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="14" Index="29" ItemMinLevel="7" ItemMaxLevel="7" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="1180" Count="1">
+	<Drop Rate="1180" Type="0" Count="1">
 		<Item Cat="12" Index="15" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="14" Index="16" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="14" Index="22" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="14" Index="13" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="14" Index="14" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="400" Count="1">
+	<Drop Rate="400" Type="0" Count="1">
 		<Item Cat="7" Index="45" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="8" Index="45" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="9" Index="45" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -150,13 +150,13 @@
 		<Item Cat="4" Index="17" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="5" Index="8" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="55" Count="1">
+	<Drop Rate="55" Type="0" Count="1">
 		<Item Cat="12" Index="70" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="52" Count="1">
+	<Drop Rate="52" Type="0" Count="1">
 		<Item Cat="12" Index="71" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
-	<Drop Rate="51" Count="1">
+	<Drop Rate="51" Type="0" Count="1">
 		<Item Cat="12" Index="72" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>

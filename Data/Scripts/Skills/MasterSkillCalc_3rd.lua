@@ -204,7 +204,7 @@ function MultiShotCalc_Master_Elf(InDamage, Dexterity, Energy)
 end
 
 -- SkillID: 413, Heal Strengthener - (High Elf)
-function ElfHeal_Level1(TargetClass, Index, TargetIndex, Energy)
+function ElfHeal_Level1(TargetClass, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	
 	if (Index ~= TargetIndex) then
@@ -257,7 +257,7 @@ function PenetrationCalc_Master_Elf(InDamage, Energy)
 end
 
 -- SkillID: 417, Defense Increase Strengthener - (High Elf)
-function ElfDefense_Level1(Class, Index, TargetIndex, Energy)
+function ElfDefense_Level1(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -304,7 +304,7 @@ function Elf_CalcTripleShot_Level2(InDamage, Strength, Dexterity, Energy)
 end
 
 -- SkillID: 423, Defense Increase Mastery - (High Elf)
-function ElfDefense_Level2(Class, Index, TargetIndex, Energy)
+function ElfDefense_Level2(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -344,7 +344,7 @@ function ElfDefense_Level2(Class, Index, TargetIndex, Energy)
 end
 
 -- SkillID: 420, Attack Increase Strengthener - (High Elf)
-function ElfAttack_Level1(Class, Index, TargetIndex, Energy)
+function ElfAttack_Level1(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -384,7 +384,7 @@ function ElfAttack_Level1(Class, Index, TargetIndex, Energy)
 end
 
 -- SkillID: 422, Attack Increase Mastery - (High Elf)
-function ElfAttack_Level2(Class, Index, TargetIndex, Energy)
+function ElfAttack_Level2(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -449,7 +449,7 @@ function PoisonArrow_MasterLevel2_DotDamage(InDamage, MasterEffect)
 end
 
 -- SkillID: 429, Party Healing Strengthener - (High Elf)
-function ElfPartyHealing(Energy)
+function ElfPartyHealing(Strength, Dexterity, Vitality, Energy)
 	local HP = Energy / 6 + 6
 	
 	return HP
@@ -467,6 +467,21 @@ function ElfBless_Level2(Energy)
 	local SkillEffect = Energy / 100
 	
 	return SkillEffect
+end
+
+-- SkillID: 876, Holy Bolt Strengthener - (High Elf)
+function ElfHolyBolt_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = InDamage
+	
+	if (BarrageCount == 1) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 2) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 3) then
+        OutDamage = InDamage
+    end
+	
+	return OutDamage
 end
 
 -- SkillID: 479, Cyclone Strengthener - (Duel Master)

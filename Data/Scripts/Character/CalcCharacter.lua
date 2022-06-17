@@ -22,8 +22,8 @@ CLASS_GROWLANCER									  = 7	-- Grow Lancer, Mirage Lancer
 CLASS_RUNEWIZARD									  = 8	-- Rune Wizard, Rune Spell Master, Grand Rune Master
 CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughterer
 CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker, Heist Gun Crusher
-CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, 
-CLASS_LEMURIAMAGE									  = 12	-- 
+CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, Shining Wizard, Luminous Wizard
+CLASS_LEMURIAMAGE									  = 12	-- Lemuria Mage, Warmage, Archmage, Mystic Mage
 
 -- Character Damage - Fist Fighting - (Dark Wizard, Soul Master, Grand Master)
 function WizardDamageCalc(Strength, Dexterity, Vitality, Energy)
@@ -881,9 +881,9 @@ function CalcDarkHorseDefenseBonus(Dexterity, PetLevel)
 end
 
 -- Fourth Class Character Damage calc from user
-function Calc4thClassDamageFromUser(UserLevel, UserMasterLevel, MonsterLevel, InDamage)
+function Calc4thClassDamageFromUser(UserLevel, UserMasterLevel, MonsterLevel, PenaltyMonsterAddLevel, InDamage)
 	local SumUserLevel = UserLevel + UserMasterLevel
-	local SumMonLevel = MonsterLevel + 600
+	local SumMonLevel = MonsterLevel + PenaltyMonsterAddLevel
 	local LevelDiff = SumMonLevel - SumUserLevel
 	local OutDamage = InDamage
 	
@@ -900,9 +900,9 @@ function Calc4thClassDamageFromUser(UserLevel, UserMasterLevel, MonsterLevel, In
 end
 
 -- Fourth Class Character Damage calc from monster
-function Calc4thClassDamageFromMonster(UserLevel, UserMasterLevel, MonsterLevel, InDamage)
+function Calc4thClassDamageFromMonster(UserLevel, UserMasterLevel, MonsterLevel, PenaltyMonsterAddLevel, InDamage)
 	local SumUserLevel = UserLevel + UserMasterLevel
-	local SumMonLevel = MonsterLevel + 600
+	local SumMonLevel = MonsterLevel + PenaltyMonsterAddLevel
 	local LevelDiff = SumMonLevel - SumUserLevel
 	local OutDamage = InDamage
 	

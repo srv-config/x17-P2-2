@@ -469,3 +469,173 @@ function LightWizardDragonViolent_4thEnchant_Calc(InDamage, Strength, Dexterity,
 
 	return OutDamage
 end
+
+-- SkillID: 1222, Raining Arrow Enhancement Skill
+function ElfRainingArrow_4thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = InDamage
+	
+	if (BarrageCount == 1) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 2) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 3) then
+        OutDamage = InDamage
+	elseif (BarrageCount == 4) then
+        OutDamage = InDamage
+	elseif (BarrageCount == 5) then
+        OutDamage = InDamage
+    end
+	
+	return OutDamage
+end
+
+-- SkillID: 1223, Holy Bolt Enhancement Skill
+function ElfHolyBolt_4thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = InDamage
+	
+	if (BarrageCount == 1) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 2) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 3) then
+        OutDamage = InDamage
+	elseif (BarrageCount == 4) then
+        OutDamage = InDamage
+    end
+	
+	return OutDamage
+end
+
+-- SkillID: 1226, Healing Enhancement Skill
+function Heal_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, Vitality, Energy)
+	local SkillEffect = 0
+	
+	if (Index ~= TargetIndex) then
+		if (TargetClass == CLASS_WIZARD) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_KNIGHT) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_ELF) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_GLADIATOR) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_DARKLORD) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_SUMMONER) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_RAGEFIGHTER) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_GROWLANCER) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_RUNEWIZARD) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_SLAYER) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_GUNCRUSHER) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_LIGHTWIZARD) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_LEMURIAMAGE) then
+			SkillEffect = Energy / 5 + 5			
+		end
+	elseif (Index == TargetIndex) then
+		SkillEffect = Energy / 5 + 5
+	end
+	
+	return SkillEffect
+end
+
+-- SkillID: 1227, Party Healing Enhancement
+function PartyHealing_4thEnchant_Elf(Strength, Dexterity, Vitality, Energy)
+	local HP = Energy / 6 + 6
+	
+	return HP
+end
+
+-- SkillID: 1228, Attack Enhancement Skill
+function Attack_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, Vitality, Energy)
+	local SkillEffect = 0
+	local SkillTime = 60
+	
+	if (Index ~= TargetIndex) then
+		if (Class == CLASS_WIZARD) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_KNIGHT) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_ELF) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_GLADIATOR) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_DARKLORD) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_SUMMONER) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_RAGEFIGHTER) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_GROWLANCER) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_RUNEWIZARD) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_LIGHTWIZARD) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_LEMURIAMAGE) then
+			SkillEffect = 3 + Energy / 7
+		end
+	elseif (Index == TargetIndex) then
+		SkillEffect = 3 + Energy / 7
+	end
+	
+	return SkillEffect, SkillTime
+end
+
+-- SkillID: 1229, Defense Enhancement Skill
+function Defense_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, Vitality, Energy)
+	local SkillEffect = 0
+	local SkillTime = 60
+	
+	if (Index ~= TargetIndex) then
+		if (Class == CLASS_WIZARD) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_KNIGHT) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_ELF) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_GLADIATOR) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_DARKLORD) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_SUMMONER) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_RAGEFIGHTER) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_GROWLANCER) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_RUNEWIZARD) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_LIGHTWIZARD) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_LEMURIAMAGE) then
+			SkillEffect = 2 + Energy / 8
+		end
+	elseif (Index == TargetIndex) then
+		SkillEffect = 2 + Energy / 8
+	end
+	
+	return SkillEffect, SkillTime
+end
+
+-- SkillID: 1230, Bless Enhancement Skill
+function Bless_4thEnchant_Elf(Energy)
+	local SkillEffect = Energy / 100
+	
+	return SkillEffect
+end
+

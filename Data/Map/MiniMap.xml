@@ -422,6 +422,7 @@
 	<!-- Kanturu Ruins -->
 		<Tag Id="0" MapNumber="37" X="16" Y="222" Name="Tarkan Entrance" />
 		<Tag Id="1" MapNumber="37" X="89" Y="91" Name="Kanturu Relics Entrance" />
+		<Tag Id="2" MapNumber="37" X="6" Y="159" Name="Kanturu Undergrounds Entrance" />
 	<!-- Kanturu 1 (Remain) -->
 		<Tag Id="0" MapNumber="38" X="66" Y="105" Name="Kanturu Ruins Entrance" />
 		<Tag Id="1" MapNumber="38" X="141" Y="186" Name="Gateway Machine" />
@@ -558,5 +559,11 @@
 		<Tag Id="2" MapNumber="134" X="168" Y="169" Name="Earth Elite Zone" />
 		<Tag Id="3" MapNumber="134" X="97" Y="161" Name="Wind Elite Zone" />
 		<Tag Id="4" MapNumber="134" X="226" Y="130" Name="Darkness Elite Zone" />
+	<!-- Kanturu Undergrounds -->
+		<Tag Id="0" MapNumber="137" X="40" Y="38" Name="Fire Elite Zone" />
+		<Tag Id="1" MapNumber="137" X="18" Y="215" Name="Water Elite Zone" />
+		<Tag Id="2" MapNumber="137" X="124" Y="10" Name="Earth Elite Zone" />
+		<Tag Id="3" MapNumber="137" X="225" Y="212" Name="Wind Elite Zone" />
+		<Tag Id="4" MapNumber="137" X="235" Y="11" Name="Darkness Elite Zone" />
 	</TypeTwo>
 </MiniMapObjects>

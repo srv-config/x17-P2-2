@@ -273,10 +273,19 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_MONSTER, 0,18, 'Monster_(18)_Gorgon') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,25, 'Monster_(25)_Ice_Queen') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,38, 'Monster_(38)_Balrog') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,43, 'Monster_(43)_Golden_Budge_Dragon') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,44, 'Monster_(44)_Dragon_Red') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,49, 'Monster_(49)_Hydra') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,53, 'Monster_(53)_Golden_Titan') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,54, 'Monster_(54)_Golden_Soldier') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,55, 'Monster_(55)_Death_King') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,59, 'Monster_(59)_Zaikan') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,78, 'Monster_(78)_Golden_Goblin') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,79, 'Monster_(79)_Golden_Dragon') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,80, 'Monster_(80)_Golden_Lizard_King') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,81, 'Monster_(81)_Golden_Vepar') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,82, 'Monster_(82)_Golden_Tantalos') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,83, 'Monster_(83)_Golden_Wheel') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,295,'Monster_(295)_Erohim') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,340,'Monster_(340)_Dark_Elf') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,349,'Monster_(349)_Balgass') -- DropFunction /2/
@@ -287,6 +296,16 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_MONSTER, 0,413,'Monster_(413)_Lunar_Rabbit') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,414,'Monster_(414)_Helper_Ellen') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,459,'Monster_(459)_Selupan') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,493,'Monster_(493)_Golden_Dark_Knight') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,494,'Monster_(494)_Golden_Devil') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,495,'Monster_(495)_Golden_Stone_Golem') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,496,'Monster_(496)_Golden_Crust') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,497,'Monster_(497)_Golden_Satyros') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,498,'Monster_(498)_Golden_Twin_Tail') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,499,'Monster_(499)_Golden_Iron_Knight') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,500,'Monster_(500)_Golden_Napin') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,501,'Monster_(501)_Golden_Great_Dragon') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,502,'Monster_(502)_Golden_Rabbit') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,561,'Monster_(561)_Medusa') -- DropFunction /2/ used when OverriteDefaultSettings from MonsterGroupRegen.xml is set to 0
 	AddItemBag(BAG_MONSTER, 0,647,'Monster_(647)_Snake_Green') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,648,'Monster_(648)_Snake_Yellow') -- DropFunction /2/
@@ -322,13 +341,16 @@ function LoadItemBag() -- Bags Load
 -- ====================================================================
 -- EventBags -- BagType, EventID, 0, 'FileName'
 -- ====================================================================
--- 0
-	AddItemBag(BAG_EVENT, 1, 0, 'Buff_Gladiators_Drop') -- DropFunction /3/
--- 2 - 5
-	AddItemBag(BAG_EVENT, 6, 0, 'Event_BloodCastle(1)_Reward') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 7, 0, 'Event_BloodCastle(2)_Reward') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 8, 0, 'Event_BloodCastle(3)_Reward') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 9, 0, 'Event_BloodCastle(4)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 0,0, 'Buff_Gladiators_Drop') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 1,0, 'Event_DevilSquare_Rank(1)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 2,0, 'Event_DevilSquare_Rank(2)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 3,0, 'Event_DevilSquare_Rank(3)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 4,0, 'Event_DevilSquare_Rank(4)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 5,0, 'Event_DevilSquare_Rank(5)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 6,0, 'Event_BloodCastle(1)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 7,0, 'Event_BloodCastle(2)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 8,0, 'Event_BloodCastle(3)_Reward') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 9,0, 'Event_BloodCastle(4)_Reward') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 10,0, 'Event_BloodCastle(5)_Reward') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 11,0, 'Event_BloodCastle(6)_Reward') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 12,0, 'Event_BloodCastle(7)_Reward') -- DropFunction /3/

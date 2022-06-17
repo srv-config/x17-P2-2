@@ -13,19 +13,19 @@
 -- BuffID refers to \Data\BuffEffectManager.cfg
 
 -- Character Classes
-CLASS_WIZARD                                          = 0
-CLASS_KNIGHT                                          = 1
-CLASS_ELF                                             = 2
-CLASS_GLADIATOR                                       = 3
-CLASS_DARKLORD                                        = 4
-CLASS_SUMMONER                                        = 5
-CLASS_RAGEFIGHTER                                     = 6
-CLASS_GROWLANCER									  = 7
-CLASS_RUNEWIZARD									  = 8
-CLASS_SLAYER									  	  = 9
-CLASS_GUNCRUSHER									  = 10
-CLASS_LIGHTWIZARD									  = 11
-CLASS_LEMURIAMAGE									  = 12
+CLASS_WIZARD                                          = 0	-- Fairy Elf, Muse Elf, High Elf
+CLASS_KNIGHT                                          = 1	-- Dark Wizard, Soul Master, Grand Master
+CLASS_ELF                                             = 2	-- Dark Knight, Blade Knight, Blade Master
+CLASS_GLADIATOR                                       = 3	-- Magic Gladiator, Duel Master
+CLASS_DARKLORD                                        = 4	-- Dark Lord, Lord Emperor
+CLASS_SUMMONER                                        = 5	-- Summoner, Bloody Summoner, Dimension Master
+CLASS_RAGEFIGHTER                                     = 6	-- Rage Fighter, Fist Master
+CLASS_GROWLANCER									  = 7	-- Grow Lancer, Mirage Lancer
+CLASS_RUNEWIZARD									  = 8	-- Rune Wizard, Rune Spell Master, Grand Rune Master
+CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughterer
+CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker, Heist Gun Crusher
+CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, Shining Wizard, Luminous Wizard
+CLASS_LEMURIAMAGE									  = 12	-- Lemuria Mage, Warmage, Archmage, Mystic Mage
 
 -- SkillID: 9, Evil Spirit
 function EvilSpiritCalc(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -182,7 +182,7 @@ function Elf_CalcTripleShot(InDamage, Strength, Dexterity, Energy)
 end
 
 -- SkillID: 26, Heal
-function ElfHeal(TargetClass, Index, TargetIndex, Energy)
+function ElfHeal(TargetClass, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	
 	-- LogAdd(string.format('TargetClass %d Index %d Target %d Ene %d', TargetClass, Index, TargetIndex, Energy))
@@ -223,7 +223,7 @@ function ElfHeal(TargetClass, Index, TargetIndex, Energy)
 end
 
 -- SkillID: 28, Greater Damage
-function ElfAttack(Class, Index, TargetIndex, Energy)
+function ElfAttack(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -263,7 +263,7 @@ function ElfAttack(Class, Index, TargetIndex, Energy)
 end
 
 -- SkillID: 27, Greater Defense
-function ElfDefense(Class, Index, TargetIndex, Energy)
+function ElfDefense(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -319,6 +319,36 @@ end
 -- SkillID: 727, Focus Shot
 function ElfFocusShotCalcDamage(InDamage, Strength, Dexterity, Energy)
 	local OutDamage = InDamage
+	
+	return OutDamage
+end
+
+-- SkillID: 2023, Raining Arrow
+function ElfRainingArrow(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = InDamage
+	
+	if (BarrageCount == 1) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 2) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 3) then
+        OutDamage = InDamage
+    end
+	
+	return OutDamage
+end
+
+-- SkillID: 2025, Holy Bolt
+function ElfHolyBolt(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = InDamage
+	
+	if (BarrageCount == 1) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 2) then
+        OutDamage = InDamage
+    elseif (BarrageCount == 3) then
+        OutDamage = InDamage
+    end
 	
 	return OutDamage
 end

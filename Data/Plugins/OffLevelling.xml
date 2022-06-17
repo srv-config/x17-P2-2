@@ -193,5 +193,6 @@
 		<Map Number="134" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Ashy Aida -->
 		<Map Number="135" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Old Kethotum -->
 		<Map Number="136" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Blaze Kethotum -->
+		<Map Number="137" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Kanturu Undergrounds -->
 	</PerMapAdjustments>
 </OffLevellingSystem>

@@ -401,6 +401,8 @@
 	<Section ID="86">
 		<Item Cat="12" Index="75" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Pierce Lion -->
 		<Item Cat="12" Index="76" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Pierce Lion (Rare) -->
+		<Item Cat="12" Index="83" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Shining Tail -->
+		<Item Cat="12" Index="84" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Shining Tail (Rare) -->
 		<Item Cat="12" Index="473" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Ghost Horse -->
 		<Item Cat="12" Index="483" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Ice Dragon -->
 		<Item Cat="12" Index="484" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Ice Dragon (Rare) -->

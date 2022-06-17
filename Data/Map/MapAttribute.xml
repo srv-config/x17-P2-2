@@ -158,5 +158,6 @@
 		<Map Number="134" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" AllowPShopOpen="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Ashy Aida -->
 		<Map Number="135" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" AllowPShopOpen="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Old Kethotum -->
 		<Map Number="136" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" AllowPShopOpen="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Burning Kethotum -->
+		<Map Number="137" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" AllowPShopOpen="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Kanturu Undergrounds -->
 	</Config>
 </MapAttribute>

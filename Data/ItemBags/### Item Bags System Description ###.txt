@@ -2,7 +2,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2020 IGC-Network (R)
+// == (C) 2022 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -69,6 +69,10 @@
 //
 // ### DropAllow::Drop ###
 //	Rate: Drop rate of items from the section, n/10000
+//	Type: Defines the way items drop from the section
+//		~ 0: Regular drop, random items of configured count
+//		~ 1: All items from a section, Count attribute is ignored then
+//
 //	Count: Items count to be dropped at a time - option ignored for LuckyCoin, MuRuumy, LordMix and Cherry Blosson rewards, always 1
 //
 // ### DropAllow::Drop::Item ###

@@ -124,6 +124,9 @@
 		<Item Cat="12" Index="510" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="20000" /> <!-- Ertel Emblem -->
 		<Item Cat="12" Index="82" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Manticore Anvil -->
 		<Item Cat="12" Index="81" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Brilliant Soul -->
+		<Item Cat="20" Index="83" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="25000" /> <!-- Daze Crafting Frame -->
+		<Item Cat="20" Index="84" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Shining Tail's Seal -->
+		
 	</Character>
 	<Character Class="0" Name="Dark Wizard">
 		<Item Cat="13" Index="359" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Armor of Sealed Transcendence -->
@@ -152,6 +155,7 @@
 		<Item Cat="6" Index="44" Level="0" Skill="0" Luck="0" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Bloodangel Shield -->
 	</Character>
 	<Character Class="2" Name="Fairy Elf">
+		<Item Cat="6" Index="34" Level="0" Skill="0" Luck="0" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blood Angel Fairy Shield -->
 		<Item Cat="13" Index="363" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Armor of Sealed Flurry -->
 		<Item Cat="13" Index="364" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Helm of Sealed Flurry -->
 		<Item Cat="13" Index="365" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Pants of Sealed Flurry -->
@@ -165,6 +169,11 @@
 		<Item Cat="4" Index="28" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Bloodangel Bow -->
 		<Item Cat="4" Index="34" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Bloodangel Quiver -->
 		<Item Cat="12" Index="293" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Orb of Focus Shot -->
+		<Item Cat="12" Index="167" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Raining Arrow Bead -->
+		<Item Cat="12" Index="168" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Dex Booster Bead -->
+		<Item Cat="12" Index="169" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Holy Bolt Bead -->
+		<Item Cat="12" Index="170" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Elemental Attack Power Enhancement Orb -->
+		<Item Cat="12" Index="171" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Elemental Defense Enhancement Orb -->
 	</Character>
 	<Character Class="3" Name="Magic Gladiator">
 		<Item Cat="13" Index="371" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Armor of Sealed Extremity -->

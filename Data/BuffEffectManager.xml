@@ -411,6 +411,16 @@
 		<Buff Index="392" EffectType="306" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="20th Anniversary Event Level 23" Description="Experience +20%" />	
 		<Buff Index="393" EffectType="306" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="20th Anniversary Event Level 24" Description="Experience +20%" />	
 		<Buff Index="394" EffectType="306" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="20th Anniversary Event Level 25" Description="Experience +20%" />	
+		<Buff Index="395" EffectType="319" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Dex Booster" Description="Movement speed, attack speed, and attack success rate increase" />
+		<Buff Index="396" EffectType="320" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Elemental Attack Power Increase" Description="Increases elemental attack power./(Effect only applies when wearing a pentagram)." />
+		<Buff Index="397" EffectType="321" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Elemental Defense Increase" Description="Increases elemental defense./(Effect only applies when wearing a pentagram)." />
+		<Buff Index="398" EffectType="320" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Elemental Attack Power Enhancement Skill" Description="Increases elemental attack power./(Effect only applies when wearing a pentagram)." />
+		<Buff Index="399" EffectType="321" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Elemental Defense Enhancement Skill" Description="Increases elemental defense./(Effect only applies while wearing a pentagram)." />
+		<Buff Index="400" EffectType="1" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Attack Power Enhancement Skill" Description="Attack power increase" />
+		<Buff Index="401" EffectType="2" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Defense Enhancement Skill" Description="Defense increase" />
+		<Buff Index="402" EffectType="87" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="2" Name="Bless Enhancement Skill" Description="All stats increase" />
+		<Buff Index="403" EffectType="322" ItemType="12" ItemIndex="83" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Wear Shining Tail" Description="Guardian mount item" />
+		<Buff Index="404" EffectType="322" ItemType="12" ItemIndex="84" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Wear Shining Tail (Rare)" Description="Guardian mount item" />
 	</General>
 	<Period>
 		<Buff Index="179" EffectType1="0" EffectValue1="25" EffectType2="0" EffectValue2="0" Duration="604800" Name="Fire Tower" />

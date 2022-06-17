@@ -72,7 +72,7 @@
 	<Move Level="160" MapNumber="80" StartX="1" StartY="1" EndX="255" EndY="255" Name="Karutan1" />
 	<Move Level="160" MapNumber="81" StartX="1" StartY="1" EndX="255" EndY="255" Name="Karutan2" />
 	<Move Level="400" MapNumber="112" StartX="112" StartY="236" EndX="152" EndY="237" Name="Ferea" />
-	<Move Level="700" MapNumber="113" StartX="1" StartY="1" EndX="255" EndY="255" Name="Nixie Lake" />
+	<Move Level="630" MapNumber="113" StartX="1" StartY="1" EndX="255" EndY="255" Name="Nixie Lake" />
 	<Move Level="700" MapNumber="135" StartX="1" StartY="1" EndX="255" EndY="255" Name="Old Kethotum" />
 	<Move Level="770" MapNumber="116" StartX="1" StartY="1" EndX="255" EndY="255" Name="Deep Dungeon 1" />
 	<Move Level="770" MapNumber="117" StartX="1" StartY="1" EndX="255" EndY="255" Name="Deep Dungeon 2" />
@@ -87,4 +87,5 @@
 	<Move Level="1100" MapNumber="133" StartX="1" StartY="1" EndX="255" EndY="255" Name="Arenil Temple" />
 	<Move Level="1130" MapNumber="134" StartX="1" StartY="1" EndX="255" EndY="255" Name="Ashe Aida" />
 	<Move Level="1160" MapNumber="136" StartX="1" StartY="1" EndX="255" EndY="255" Name="Blaze Kethotum" />
+	<Move Level="1190" MapNumber="137" StartX="1" StartY="1" EndX="255" EndY="255" Name="Kanturu Undergrounds" />
 </MoveSettings>

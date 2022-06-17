@@ -36,7 +36,7 @@
 //	Type: Type of event:
 //		~ 0: Get Bought Item
 //		~ 1: Get Received Prize
-//		~ 2: Get Widthdrawn items
+//		~ 2: Get Withdrawn items
 //
 //	Time: Time the reward is available to pick up from gremory case, seconds
 //	Name: Name of the event, used for logging and description purpose
@@ -66,11 +66,12 @@
 			<Use Type="16" Time="86400" Name="Inventory Mix" />
 			<Use Type="17" Time="3600" Name="Event Items" />
 			<Use Type="18" Time="3600" Name="Labyrinth" />
+			<Use Type="100" Time="86400" Name="GM Gift" />
 		</General>
 		<PersonalShop>
 			<Use Type="0" Time="604800" Name="Time to obtain purchased item" />
 			<Use Type="1" Time="604800" Name="Time to obtain prize for sold item" />
-			<Use Type="2" Time="604800" Name="Time to obtain items widthdrawn from Personal Store" />
+			<Use Type="2" Time="604800" Name="Time to obtain items withdrawn from Personal Store" />
 		</PersonalShop>
 	</RewardExpiryTime>
 </GremoryCase>

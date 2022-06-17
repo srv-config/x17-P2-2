@@ -83,6 +83,7 @@
 		<Map Index="134" Name="Gray Aida" />
 		<Map Index="135" Name="Old Kethhotum" />
 		<Map Index="136" Name="Blaze Kethhotum" />
+		<Map Index="137" Name="Kanturu Undergrounds" />
 	</MapIncluded>
 	<MonstersExcluded> <!-- Monsters excluded from huntin records -->
 		<Monster Index="413" Name="Gold Rabbit" />

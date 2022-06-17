@@ -248,6 +248,7 @@
 			<Skill Index="54" ReqMinPoint="1" MaxPoint="20" ParentSkill1="417" ParentSkill2="0" MagicNumber="423" ValueType="0" Name="Defense Increase Mastery" />
 			<Skill Index="55" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="424" ValueType="1" Name="Ice Arrow Strengthener" />
 			<Skill Index="56" ReqMinPoint="1" MaxPoint="20" ParentSkill1="334" ParentSkill2="0" MagicNumber="338" ValueType="0" Name="Maximum Mana Increase" />
+			<Skill Index="57" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="876" ValueType="1" Name="Holy Bolt Strenghtener" />
 			<Skill Index="58" ReqMinPoint="10" MaxPoint="10" ParentSkill1="423" ParentSkill2="0" MagicNumber="425" ValueType="0" Name="Cure" />
 			<Skill Index="59" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="411" ValueType="1" Name="Multi-Shot Strengthener" />
 			<Skill Index="60" ReqMinPoint="1" MaxPoint="20" ParentSkill1="338" ParentSkill2="0" MagicNumber="341" ValueType="0" Name="Maximum AG Increase" />

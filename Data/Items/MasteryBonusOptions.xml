@@ -33,6 +33,7 @@
 //	ItemKindA_2: Item KindA the option applies to (ItemList.xml), -1 if not applies
 //	ItemKindA_3: Item KindA the option applies to (ItemList.xml), -1 if not applies
 //	ItemKindA_4: Item KindA the option applies to (ItemList.xml), -1 if not applies
+//	ItemKindA_5: Item KindA the option applies to (ItemList.xml), -1 if not applies
 //	Name: Name of the option (used for in-file description purpose only)
 //
 // ### MasteryBonusOptions::OptionRate::Option ###
@@ -54,13 +55,13 @@
 <MasteryBonusOptions>
 	<OptionList>
 	<!-- Damage Decrease -->							
-		<Option Number="1" Index="1" Operator="1" Value="25" FormulaID="-1" ItemKindA_1="15" ItemKindA_2="18" ItemKindA_3="-1" ItemKindA_4="-1" Name="Damage Decrease %d" />
-		<Option Number="1" Index="2" Operator="1" Value="50" FormulaID="-1" ItemKindA_1="15" ItemKindA_2="18" ItemKindA_3="-1" ItemKindA_4="-1" Name="Damage Decrease %d" />
-		<Option Number="1" Index="3" Operator="1" Value="75" FormulaID="-1" ItemKindA_1="15" ItemKindA_2="18" ItemKindA_3="-1" ItemKindA_4="-1" Name="Damage Decrease %d" />
+		<Option Number="1" Index="1" Operator="1" Value="25" FormulaID="-1" ItemKindA_1="15" ItemKindA_2="18" ItemKindA_3="27" ItemKindA_4="-1" ItemKindA_5="-1" Name="Damage Decrease %d" />
+		<Option Number="1" Index="2" Operator="1" Value="50" FormulaID="-1" ItemKindA_1="15" ItemKindA_2="18" ItemKindA_3="27" ItemKindA_4="-1" ItemKindA_5="-1" Name="Damage Decrease %d" />
+		<Option Number="1" Index="3" Operator="1" Value="75" FormulaID="-1" ItemKindA_1="15" ItemKindA_2="18" ItemKindA_3="27" ItemKindA_4="-1" ItemKindA_5="-1" Name="Damage Decrease %d" />
 	<!-- Increase all stats -->								
-		<Option Number="2" Index="1" Operator="1" Value="10" FormulaID="-1" ItemKindA_1="14" ItemKindA_2="-1" ItemKindA_3="-1" ItemKindA_4="-1" Name="Increase all stats +%d" />
-		<Option Number="2" Index="2" Operator="1" Value="25" FormulaID="-1" ItemKindA_1="14" ItemKindA_2="-1" ItemKindA_3="-1" ItemKindA_4="-1" Name="Increase all stats +%d" />
-		<Option Number="2" Index="3" Operator="1" Value="40" FormulaID="-1" ItemKindA_1="14" ItemKindA_2="-1" ItemKindA_3="-1" ItemKindA_4="-1" Name="Increase all stats +%d" />
+		<Option Number="2" Index="1" Operator="1" Value="10" FormulaID="-1" ItemKindA_1="14" ItemKindA_2="-1" ItemKindA_3="-1" ItemKindA_4="-1" ItemKindA_5="-1" Name="Increase all stats +%d" />
+		<Option Number="2" Index="2" Operator="1" Value="25" FormulaID="-1" ItemKindA_1="14" ItemKindA_2="-1" ItemKindA_3="-1" ItemKindA_4="-1" ItemKindA_5="-1" Name="Increase all stats +%d" />
+		<Option Number="2" Index="3" Operator="1" Value="40" FormulaID="-1" ItemKindA_1="14" ItemKindA_2="-1" ItemKindA_3="-1" ItemKindA_4="-1" ItemKindA_5="-1" Name="Increase all stats +%d" />
 	</OptionList>
 	
 	<OptionRate>

@@ -88,6 +88,11 @@
 //		33: Crusher Charge Defense Increase
 //		34: Elemental Charge Wizadry Increase
 //		35: Elemental Charge Defense Increase
+//		36: Elemental Damage Increase
+//		37: Duration time for formulas 36 and 38
+//		38: Elemental Defense Increase
+//		39: Dex Booster Duration Time
+//		40: Dex Booster Attack Speed Increase
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
@@ -115,6 +120,7 @@
 		<Formula ID="6" Data="(%d/100)*(%d/20)" /> <!-- ItemDropLevel, PlayerLevel -->
 		<Formula ID="7" Data="((%d/200)+((%d*4)^1.11))" /> <!-- ItemDropLevel, PlayerLevel -->
 		<Formula ID="8" Data="((%d/200)+((%d*3)^1.1))" /> <!-- ItemDropLevel, PlayerLevel -->
+		<Formula ID="9" Data="(%d*0.05)^1.4" /> <!-- ItemDropLevel -->
 	</ExcellentOption>
 	
 	<SetAddStatOption>
@@ -207,7 +213,7 @@
 		<Formula ID="71" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
 		<Formula ID="72" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
 		<Formula ID="73" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="74" Data="(87+((%d*6.5)^1.6))" /> <!-- SkillPoint -->
+		<Formula ID="74" Data="87+((%d*6.5)^1.6)" /> <!-- SkillPoint -->
 		<Formula ID="75" Data="((((((5.85+%d)^2)/10)*5)/5)*3)+15" /> <!-- SkillPoint -->
 		<Formula ID="76" Data="(140+((%d*18)^1.265))" /> <!-- SkillPoint -->
 		<Formula ID="77" Data="((((((7+%d)^2)/10)*5)/9.8)*5)/10" /> <!-- SkillPoint -->
@@ -420,6 +426,13 @@
 		<Formula ID="284" Data="(1+((((((%d)-30)^3)+25000)/499)/8))-0.07475" /> <!-- SkillPoint -->
 		<Formula ID="285" Data="((5+(((%d-47)^3)+102000)/860)/2)" /> <!-- SkillPoint -->
 		<Formula ID="286" Data="%d*1" /> <!-- SkillPoint -->
+		<Formula ID="287" Data="(1+(((((((%d-30)^3)+25000)/499)/6))))*33.3" /> <!-- SkillPoint -->
+		<Formula ID="288" Data="((((((8+%d)^2)/10)*7)/6)*4)" /> <!-- SkillPoint -->
+		<Formula ID="289" Data="((((((25+%d)^1.7)/10)*9)/7)*4)" /> <!-- SkillPoint -->
+		<Formula ID="290" Data="((((((23+%d)^2)/10)*5)/7)*2)" /> <!-- SkillPoint -->
+		<Formula ID="291" Data="(0.8+(((((((%d-30)^3)+25000)/499)/50)*100)/12))*8" /> <!-- SkillPoint -->
+		<Formula ID="292" Data="(1+(((((((%d-30)^3)+25000)/499)/50)*100)/12))*23" /> <!-- SkillPoint -->
+		<Formula ID="293" Data="(1+(((((((%d-30)^3)+25000)/499)/50)*100)/12))*23" /> <!-- SkillPoint -->
 	</SkillTree>
 	<SetOption>
 		<Formula ID="0" Data="((((%d*1.25)^1.48)+5)/1.1)" /> <!-- ItemLevel -->
@@ -559,6 +572,12 @@
 		<Formula ID="33" Data="((%d/10)+(%d/30))*2" /> <!-- TotalLevel, Agility -->
 		<Formula ID="34" Data="((%d/15)+(%d*0.1))*1.5" /> <!-- TotalLevel, Energy -->
 		<Formula ID="35" Data="((%d/10)+(%d/30))*2" /> <!-- TotalLevel, Agility -->
+		<Formula ID="36" Data="((%d/10)+5)" /> <!-- Energy -->
+		<Formula ID="37" Data="(%d/10)+10" /> <!-- Energy -->
+		<Formula ID="38" Data="(%d/30)+5" /> <!-- Energy -->
+		<Formula ID="39" Data="5" /> <!-- None -->
+		<Formula ID="40" Data="30" /> <!-- None -->
+		<Formula ID="41" Data="2000" /> <!-- None -->
 	</Character>
 	<GuardianItem>
 		<Formula ID="0" Data="20+((9+%d)/2)^2" /> <!-- ItemLevel -->
@@ -592,6 +611,16 @@
 		<Formula ID="28" Data="((2.1+(0.5*%d))^1.72)" /> <!-- ItemLevel -->
 		<Formula ID="29" Data="((4.5+(%d/10))^4.2)" /> <!-- ItemLevel -->
 		<Formula ID="30" Data="(%d*3+(%d/5))" /> <!-- ItemLevel -->
+		<Formula ID="31" Data="(121+((15+%d)/2)^2)" /> <!-- ItemLevel -->
+		<Formula ID="32" Data="(121+((15+%d)/2)^2)" /> <!-- ItemLevel -->
+		<Formula ID="33" Data="(4+((%d/10)*1.9)^1.5)" /> <!-- ItemLevel -->
+		<Formula ID="34" Data="(4+((%d/10)*1.6)^1.49)" /> <!-- ItemLevel -->
+		<Formula ID="35" Data="%d*0" /> <!-- ItemLevel -->
+		<Formula ID="36" Data="((6+(%d/10))^3.9)" /> <!-- ItemLevel -->
+		<Formula ID="37" Data="((5.7+(%d/10))^4.2)" /> <!-- ItemLevel -->
+		<Formula ID="38" Data="((5+(%d/10))^4.2)" /> <!-- ItemLevel -->
+		<Formula ID="39" Data="((3.5+(0.5*%d))^1.72)" /> <!-- ItemLevel -->
+		<Formula ID="40" Data="((5.6+(%d/10))^4)" /> <!-- ItemLevel -->
 	</GuardianItem>
 	<Earrings>
 		<Formula ID="0" Data="(((%d*5)+70)/1.8)" /> <!-- ItemLevel -->
@@ -601,6 +630,9 @@
 		<Formula ID="4" Data="(((%d*5)+134)/1.8)" /> <!-- ItemLevel -->
 		<Formula ID="5" Data="(((%d*5)+125)/1)" /> <!-- ItemLevel -->
 		<Formula ID="6" Data="(((%d*6)+60)/1)" /> <!-- ItemLevel -->
+		<Formula ID="7" Data="(((%d*5)+166)/1.8)" /> <!-- ItemLevel -->
+		<Formula ID="8" Data="(((%d*5)+155)/1)" /> <!-- ItemLevel -->
+		<Formula ID="9" Data="(((%d*6)+70)/1)" /> <!-- ItemLevel -->
 	</Earrings>
 	<Group11>
 		<Formula ID="0" Data="0" /> <!-- empty -->
