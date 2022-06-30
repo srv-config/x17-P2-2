@@ -23,6 +23,7 @@
 //	MapNumber: Map to spawn the Monster Group on
 //	BossMonsterIndex: Index of Boss Monster for the Group
 //	BossMonsterName: Name of Boss Monster, used for in-file information only
+//	AllowMove: Determines whether group monsters will be moving after spawn or not, 0/1
 //	SpawnNotice: Notice to display in-game upon spawn of the monsters group
 //	DespawnNotice: Notice to display in-game upon despawn of the monsters group
 //
@@ -55,8 +56,18 @@
 //	Index: Index of Group number, references to setting from GroupSettings section
 //
 // ### MonsterGroupRegenSystem::SpawnSettings::Group::Spawn ###
-//	StartHour: Start hour for the spawn (0-23)
-//	StartMinute: Start minute for the spawn (0-23)
+//	DayOfMonth: Day of month the spawn will run on, 1-31 or -1 for any day
+//	DayOfWeek: Day of a week the spawn will run on:
+//		~ 0: Sunday
+//		~ 1: Monday
+//		~ 2: Tuesday
+//		~ 3: Wednesday
+//		~ 4: Thursday
+//		~ 5: Friday
+//		~ 6: Saturday
+//		~ -1: every day
+//	Hour: Start hour for the spawn, 0-23
+//	Minute: Start minute for the spawn, 0-59
 //	AppearanceRate: Chance to process specified spawn, expressed in percent, 0-100
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
@@ -64,7 +75,7 @@
 
 <MonsterGroupRegenSystem SpawnNotice="1" MonsterKillRewardType="1">
 	<GroupSettings>
-		<Group Index="0" Duration="60" MapNumber="56" BossMonsterIndex="561" BossMonsterName="Medusa" SpawnNotice="Medusa and her assistants has invaded Swamp of Clamness!!!" DespawnNotice="Medusa and her assistants are gone" PreNotice="Medusa will spawn in %d Minutes" />
+		<Group Index="0" Duration="60" MapNumber="56" BossMonsterIndex="561" BossMonsterName="Medusa" AllowMove="0" SpawnNotice="Medusa and her assistants has invaded Swamp of Clamness!!!" DespawnNotice="Medusa and her assistants are gone" PreNotice="Medusa will spawn in %d Minutes" />
 	</GroupSettings>
  
 	<SpotSettings>
@@ -85,7 +96,7 @@
  
 	<SpawnSettings>
 		<Group Index="0">
-			<Spawn StartHour="11" StartMinute="8" AppearanceRate="100" />
+			<Spawn DayOfMonth="-1" DayOfWeek="-1" Hour="11" Minute="8" AppearanceRate="100" />
 		</Group> 
 	</SpawnSettings>
 </MonsterGroupRegenSystem>

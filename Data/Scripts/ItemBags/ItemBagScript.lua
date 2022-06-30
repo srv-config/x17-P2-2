@@ -132,11 +132,8 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_DROP, MakeItemID(14,11), 10,'Item_(14,11,10)_Kundun_Box+3') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,11), 11,'Item_(14,11,11)_Kundun_Box+4') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,11), 12,'Item_(14,11,12)_Kundun_Box+5') -- DropFunction /1/
-	AddItemBag(BAG_DROP, MakeItemID(14,32), 0, 'Item_(14,32,0)_Pink_Chocolate_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,32), 1, 'Item_(14,32,1)_Light_Purple_Candy_Box') -- DropFunction /1/
-	AddItemBag(BAG_DROP, MakeItemID(14,33), 0, 'Item_(14,33,0)_Red_Chocolate_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,33), 1, 'Item_(14,33,1)_Orange_Candy_Box') -- DropFunction /1/
-	AddItemBag(BAG_DROP, MakeItemID(14,34), 0, 'Item_(14,34,0)_Blue_Chocolate_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,34), 1, 'Item_(14,34,1)_Dark_Blue_Candy_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,45), 0, 'Item_(14,45,0)_Pumpkin_of_Luck') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,52), 0, 'Item_(14,52,0)_GM_Gift_Box') -- DropFunction /1/
@@ -187,7 +184,7 @@ function LoadItemBag() -- Bags Load
 
 -- ====================================================================
 -- ItemBags -- BagType, MakeItemID(Type,Index), ItemLevel, 'FileName'
--- ====================================================================
+-- ====================================================================			
 	AddItemBag(BAG_INVENTORY, MakeItemID(12,32), 0, 'Item_(12,32,0)_Red_Ribbon_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(12,33), 0, 'Item_(12,33,0)_Green_Ribbon_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(12,34), 0, 'Item_(12,34,0)_Blue_Ribbon_Box') -- DropFunction /4/
@@ -196,6 +193,9 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_INVENTORY, MakeItemID(13,221),0, 'Item_(13,221,0)_Fire_Flame_Ghost_Egg') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(13,222),0, 'Item_(13,222,0)_Golden_Goblin_Egg') -- DropFunction /4/	
 	AddItemBag(BAG_INVENTORY, MakeItemID(13,350),0, 'Item_(13,350,0)_Roomy_Egg') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,32), 0, 'Item_(14,32,0)_Pink_Chocolate_Box') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,33), 0, 'Item_(14,33,0)_Red_Chocolate_Box') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,34), 0, 'Item_(14,34,0)_Blue_Chocolate_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,282),0, 'Item_(14,282,0)_Mastery_Box_(Minor)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,283),0, 'Item_(14,283,0)_Mastery_Box_(Standard)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,284),0, 'Item_(14,284,0)_Mastery_Box_(Greater)') -- DropFunction /4/
