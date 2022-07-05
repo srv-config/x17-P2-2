@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2022 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -16,7 +16,7 @@
 //
 // ### MonsterGroupRegenSystem::GroupSettings::Group ###
 //	Index: Group number definition, unique in the section
-//	Duration: Time after which monsters will be deleted if not killed, minutes
+//	Duration: Time after which monsters will be deleted if not killed, minutes, if -1 is specified then monsters remain until killed
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ If Duration is set to longer than next spawn schedule then monsters are being removed on a basis of schedule higher priority spawn
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,6 +39,8 @@
 //
 // ### MonsterGroupRegenSystem::MonsterSettings::Group::Monster ###
 //	Index: Index of a monster belonging to the group, refer to MonsterList.xml
+//	MoveRange: Distance in tiles of how far the monsters can move from initial location after spawn
+//	SpawnType: Determines relation to BossMonsterIndex of specific group, if set to higher than 0 the monsters will be treated as minions and spawned around the boss. Value specified in SpawnType will be used as distance the monsters will be spawned from the boss
 //	Count: Count of monsters of specified type to spawn
 //	OverrideDefaultSettings: Determines whether to use monster attributes from MonsterList.xml or override them with attributes defined from this file, 0/1
 //	EventID: ID of event item bag type defined in ItemBagScript.lua
@@ -89,8 +91,8 @@
  
 	<MonsterSettings>
 		<Group Index="0">
-			<Monster Index="560" MoveRange="10" Count="7" OverrideDefaultSettings="1" EventID="151" HP="150000" DamageMin="100" DamageMax="150" Defense="150" AttackRate="1000" DefenseRate="1000" SendKillNotice="1" KillNotice="[MEDUSA] %s killed Medusa assistant!" />
-			<Monster Index="561" MoveRange="10" Count="1" OverrideDefaultSettings="1" EventID="150" HP="15000000" DamageMin="1000" DamageMax="1500" Defense="550" AttackRate="2000" DefenseRate="2000" SendKillNotice="1" KillNotice="[MEDUSA] %s killed Medusa!" />
+			<Monster Index="560" MoveRange="10" SpawnType="0" Count="7" OverrideDefaultSettings="1" EventID="151" HP="150000" DamageMin="100" DamageMax="150" Defense="150" AttackRate="1000" DefenseRate="1000" SendKillNotice="1" KillNotice="[MEDUSA] %s killed Medusa assistant!" />
+			<Monster Index="561" MoveRange="10" SpawnType="0" Count="1" OverrideDefaultSettings="1" EventID="150" HP="15000000" DamageMin="1000" DamageMax="1500" Defense="550" AttackRate="2000" DefenseRate="2000" SendKillNotice="1" KillNotice="[MEDUSA] %s killed Medusa!" />
 		</Group>
 	</MonsterSettings>
  
