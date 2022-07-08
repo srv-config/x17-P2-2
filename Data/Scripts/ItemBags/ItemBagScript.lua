@@ -423,6 +423,9 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_EVENT, 300,0, 'ResetSystem_Regular')
 	AddItemBag(BAG_EVENT, 301,0, 'ResetSystem_Milestone')
 
+-- Bags for purpose of Scramble Word event
+	AddItemBag(BAG_EVENT, 400,0, 'Event_ScrambleWord_Level_1')
+	AddItemBag(BAG_EVENT, 401,0, 'Event_ScrambleWord_Level_2')
 end
 
 -- ### /1/ Drop Item (using Item Bag Structure) ### --

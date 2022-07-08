@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<!--
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2022 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
 //
 // ### ScrambleWords::Event ###
 //	Enable: Activate or deactivates the event, 0/1
-//	MaxRounds: Maximum number of round per level
 //	TimeToStartMinutes: Notify time befoe event starts, minutes
 //	MaxEventTimeMinutes: Maximum event time in case of inactivity, minutes
-//	DifficultyLevelUp: Number of rounds to advance to next level
 //	NotifyWinner: Displays a message about round winner
 //
 // ### ScrambleWords::ChatMessage ###
@@ -22,22 +19,20 @@
 //	Green: Color Code (G)
 //	Blue: Color Code (B)
 //
-// ### ScrambleWords::DifficultyLevelReward::Difficulty ###
-//	Level: Difficulty level:
-//		~ 1: Backward spelling
-//		~ 2: Mixed letters
-//
-//	ItemCat: Reward item category
-//	ItemIndex: Reward item index
-//	Itemlevel: Reward item level
-//	ItemDurability: Reward item durability
-//
 // ### ScrambleWords::Schedule::Start ###
 //	Hour: Event start hour, 0-23
 //	Minute: Event start minute, 0-59
 //
 // ### ScrambleWords::WordsList::Difficulty ###
-//	Level: Difficulty level reference
+//	RoundsCount: Number rounds (words) in specific difficulty
+//	ScrambleType: Type of mixing letters in a word
+//		~ 0: Backward spelling
+//		~ 1: Mixed letters
+//	
+//	ItemBagID: ID of event item bag type defined in ItemBagScript.lua, reward is being issued to Gremory Case
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ System allows to define unlimited number of difficulties by following in-file example pattern, order of difficulties in file determines difficulty level
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### ScrambleWords::WordsList::Difficulty::Word ###
 //	Data: A word to guess, no spaces or special characters for now
@@ -49,16 +44,10 @@
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
-
 <ScrambleWords>
-	<Event Enable="1" MaxRounds="12" TimeToStartMinutes="1" MaxEventTimeMinutes="15" DifficultyLevelUp="4" NotifyWinner="1" />
+	<Event Enable="1" TimeToStartMinutes="1" MaxEventTimeMinutes="15" NotifyWinner="1" />
 	<ChatMessage Enable="1" Red="45" Green="15" Blue="175" />
 	
-	<DifficultyLevelReward>
-		<Difficulty Level="1" ItemCat="14" ItemIndex="14" ItemLevel="0" ItemDurability="1" />
-		<Difficulty Level="2" ItemCat="14" ItemIndex="13" ItemLevel="0" ItemDurability="1" />
-	</DifficultyLevelReward>
-
 	<Schedule>
 		<Start Hour="10" Minute="0" />
 		<Start Hour="12" Minute="0" />
@@ -66,9 +55,9 @@
 		<Start Hour="18" Minute="0" />
 		<Start Hour="23" Minute="0" />
 	</Schedule>
-
+	
 	<WordsList>
-		<Difficulty Level="1">
+		<Difficulty RoundsCount="4" ScrambleType="0" ItemBagID="400">
 			<Word Data="scramble" Hint="" />
 			<Word Data="alcohol" Hint="" />
 			<Word Data="programmer" Hint="" />
@@ -82,7 +71,8 @@
 			<Word Data="cinema" Hint="" />
 			<Word Data="forest" Hint="" />
 		</Difficulty>
-		<Difficulty Level="2">
+		
+		<Difficulty RoundsCount="4" ScrambleType="1" ItemBagID="401">
 			<Word Data="difficulty" Hint="" />
 			<Word Data="laser" Hint="" />
 			<Word Data="island" Hint="" />
