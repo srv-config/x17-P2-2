@@ -652,7 +652,7 @@
 		<Msg ID="623" Text="Failed to load item restoration DB information at present." />
 		<Msg ID="624" Text="You can not use the item restoration feature, and you can not recover items that are sold now." />
 		<Msg ID="625" Text="Internal Error" />
-		<Msg ID="626" Text="" /> <!-- Empty -->
+		<Msg ID="626" Text="I can offer my service to %s VIP or higher only" />
 		<Msg ID="627" Text="You have successfully cancelled from Battle Core." />
 		<Msg ID="628" Text="Cancel Battle Core is not possible on central server." />
 		<Msg ID="629" Text="Successfully created Avatar in Battle Core." />
@@ -756,7 +756,7 @@
 		<Msg ID="729" Text="%s was successful in hunting golden EvoMon." />
 		<Msg ID="730" Text="Please reset fourth enhancement tree first." />
 		<Msg ID="731" Text="Min Reset Limit: %d, Max Reset Limit: %d."/>
-		<Msg ID="732" Text="" /> <!-- EMPTY -->
+		<Msg ID="732" Text="%s has emerged golden evomon." />
 		<Msg ID="733" Text="Close the Pentagram Mix Window and exit." />
 		<Msg ID="734" Text="Channel-Change is not available at present, try again later." />
 		<Msg ID="735" Text="Channel-Change is available for VIP players only." />
@@ -821,16 +821,18 @@
 		<Msg ID="795" Text="[Personal Store]: " />
 		<Msg ID="796" Text="[Quest]: " />
 		<Msg ID="797" Text="You need to be level %d or higher to move with me." />
-		<Msg ID="798" Text="I can take you to %s for %d %s and %s+%d (%d pcs.), click me again to go" />
-		<Msg ID="799" Text="I can take you to %s for %d %s, click me again to go" />
-		<Msg ID="800" Text="I can take you to %s for %s+%d (%d pcs.), click me again to go" />
-		<Msg ID="801" Text="You need %s+%d (%d pcs.) to convince me to deal with you." />
+		<Msg ID="798" Text="I can take you to %s for %d %s and %s+%d (%d pcs.)." />
+		<Msg ID="799" Text="I can take you to %s for %d %s." />
+		<Msg ID="800" Text="I can take you to %s for %s+%d (%d pcs.)." />
+		<Msg ID="801" Text="You need %s+%d (%d pcs.) to deal with me." />
 		<Msg ID="802" Text="White Wizard" />
 		<Msg ID="803" Text="Lemuria Mage" />
 		<Msg ID="804" Text="Trading is available in Safe Zone only, Personal Store has been closed." />
 		<Msg ID="805" Text="Full Excellent Option items cannot be traded via Personal Store." />
 		<Msg ID="806" Text="Close Personal Store before entering Off-Trade." />
 		<Msg ID="807" Text="%s is on channel %d where local currency is %s. Move to the channel to continue trading with him" />
+		<Msg ID="808" Text="Click me again to go." />
+		<Msg ID="809" Text="The authorization relationship with the awakening monster has been reset." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />

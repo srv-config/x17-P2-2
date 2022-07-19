@@ -43,7 +43,6 @@
 //	Rate2: Chance rate for Socket count 2
 //	Rate3: Chance rate for Socket count 3
 //	Rate4: Chance rate for Socket count 4
-//	Rate5: Chance rate for Socket count 5
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Rate is n/10000, sum of total per row must be equal to 10000
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,7 +116,7 @@
 	</OptionSetting>
 
 	<SocketProbabilityRate>
-		<Socket Grade="2" Rate1="0" Rate2="0" Rate3="7000" Rate4="3000" Rate5="0" /> <!-- Rare Chance Socket, Total 10000 -->
-		<Socket Grade="3" Rate1="0" Rate2="0" Rate3="0"  Rate4="10000" Rate5="0" /> <!-- Unique Chance Socket, Total 10000 -->
+		<Socket Grade="2" Rate1="0" Rate2="0" Rate3="7000" Rate4="3000" /> <!-- Rare Chance Socket, Total 10000 -->
+		<Socket Grade="3" Rate1="0" Rate2="0" Rate3="0"  Rate4="10000" /> <!-- Unique Chance Socket, Total 10000 -->
 	</SocketProbabilityRate>
 </PentagramSystem>

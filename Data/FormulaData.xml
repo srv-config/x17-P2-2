@@ -615,7 +615,7 @@
 		<Formula ID="32" Data="(121+((15+%d)/2)^2)" /> <!-- ItemLevel -->
 		<Formula ID="33" Data="(4+((%d/10)*1.9)^1.5)" /> <!-- ItemLevel -->
 		<Formula ID="34" Data="(4+((%d/10)*1.6)^1.49)" /> <!-- ItemLevel -->
-		<Formula ID="35" Data="%d*0" /> <!-- ItemLevel -->
+		<Formula ID="35" Data="(2+((3.9+%d)/2)^1.5)" /> <!-- ItemLevel -->
 		<Formula ID="36" Data="((6+(%d/10))^3.9)" /> <!-- ItemLevel -->
 		<Formula ID="37" Data="((5.7+(%d/10))^4.2)" /> <!-- ItemLevel -->
 		<Formula ID="38" Data="((5+(%d/10))^4.2)" /> <!-- ItemLevel -->

@@ -30,10 +30,15 @@
 //	ItemKindA_2: Item KindA the option applies to (ItemList.xml), -1 if not applies
 //	ItemKindA_3: Item KindA the option applies to (ItemList.xml), -1 if not applies
 //	ItemKindA_4: Item KindA the option applies to (ItemList.xml), -1 if not applies
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ItemKindA_5: Item KindA the option applies to (ItemList.xml), -1 if not applies
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Special values:
 //~~ 100: Blessed Archangel weapons
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//~~ Specific Item Kind cannot be configure to options of same value of Number attribute. 
+//~~ If same ItemKind will be configured to more options of same value of Number attribute
+//~~ then only first option will be assigned and second will be ignored.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	Rate: Chance of getting specified option, n/10000
 //	Name: Name of the option (used for in-file description purpose only)
 //

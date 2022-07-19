@@ -507,35 +507,35 @@ function ElfHolyBolt_4thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, En
 end
 
 -- SkillID: 1226, Healing Enhancement Skill
-function Heal_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, Vitality, Energy)
+function Heal_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	
 	if (Index ~= TargetIndex) then
-		if (TargetClass == CLASS_WIZARD) then
+		if (Class == CLASS_WIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_KNIGHT) then
+		elseif (Class == CLASS_KNIGHT) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_ELF) then
+		elseif (Class == CLASS_ELF) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_GLADIATOR) then
+		elseif (Class == CLASS_GLADIATOR) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_DARKLORD) then
+		elseif (Class == CLASS_DARKLORD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_SUMMONER) then
+		elseif (Class == CLASS_SUMMONER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_RAGEFIGHTER) then
+		elseif (Class == CLASS_RAGEFIGHTER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_GROWLANCER) then
+		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_RUNEWIZARD) then
+		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_SLAYER) then
+		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_GUNCRUSHER) then
+		elseif (Class == CLASS_GUNCRUSHER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_LIGHTWIZARD) then
+		elseif (Class == CLASS_LIGHTWIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (TargetClass == CLASS_LEMURIAMAGE) then
+		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = Energy / 5 + 5			
 		end
 	elseif (Index == TargetIndex) then
@@ -553,7 +553,7 @@ function PartyHealing_4thEnchant_Elf(Strength, Dexterity, Vitality, Energy)
 end
 
 -- SkillID: 1228, Attack Enhancement Skill
-function Attack_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, Vitality, Energy)
+function Attack_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	
@@ -593,7 +593,7 @@ function Attack_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, V
 end
 
 -- SkillID: 1229, Defense Enhancement Skill
-function Defense_4thEnchant_Elf(Class, Index, TargetClass, Strength, Dexterity, Vitality, Energy)
+function Defense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
 	

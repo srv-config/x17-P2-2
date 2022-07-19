@@ -93,6 +93,9 @@
 // 75: Defense Rate Decrease +%d
 // 87: Exp gain increase +%d% (Ascension Items, Normal/Master level usable)
 // 88: Exp gain increase +%d% (Bless of Light, Normal/Master level usable)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// If OptionX value is set to 0 for items 14,97-98 and 14,231-232 then Critical/Excellent damage increase ffect is used at specified value
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -->
 	<Section ID="2">
 		<Item Cat="13" Index="43" Option1="6" Value1="50" Option2="0" Value2="0" Time="1800" /> <!-- Seal of Ascension -->
@@ -142,8 +145,8 @@
 	</Section>
 
 	<Section ID="13">
-		<Item Cat="14" Index="97" Option1="55" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll of Battle -->
-		<Item Cat="14" Index="98" Option1="56" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll of Strength -->
+		<Item Cat="14" Index="97" Option1="0" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll of Battle -->
+		<Item Cat="14" Index="98" Option1="0" Value1="20" Option2="0" Value2="0" Time="1800" /> <!-- Scroll of Strength -->
 	</Section>
 
 	<Section ID="14">
@@ -328,11 +331,11 @@
 	</Section>
 
 	<Section ID="69">
-		<Item Cat="14" Index="231" Option1="55" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Battle -->
+		<Item Cat="14" Index="231" Option1="0" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Battle -->
 	</Section>
 
 	<Section ID="70">
-		<Item Cat="14" Index="232" Option1="56" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Strengthener -->
+		<Item Cat="14" Index="232" Option1="0" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Strengthener -->
 	</Section>
 
 	<!-- <Section ID="71"> -->

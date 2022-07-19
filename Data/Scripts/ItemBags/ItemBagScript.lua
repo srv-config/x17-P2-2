@@ -169,6 +169,8 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_DROP, MakeItemID(14,268),0, 'Item_(14,268,0)_Goblin_Treasure_Box_(Yellow)') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,262),0, 'Item_(14,262,0)_Guardman_Captains_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,286),0, 'Item_(14,286,0)_Pentagram_Box') -- DropFunction /1/
+	AddItemBag(BAG_DROP, MakeItemID(14,354),0, 'Item_(14,354,0)_PlayTime_Box') -- DropFunction /1/
+	AddItemBag(BAG_DROP, MakeItemID(14,355),0, 'Item_(14,355,0)_PlayTime_Special_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,406),0, 'Item_(14,406,0)_Intermediate_Mastery_Weapon_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,407),0, 'Item_(14,407,0)_Speed_Server_Competition_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,412),0, 'Item_(14,412,0)_Intermediate_Mastery_Armor_Box') -- DropFunction /1/
