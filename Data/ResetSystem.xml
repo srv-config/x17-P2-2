@@ -22,11 +22,8 @@
 //		~ 2: Regular + master level
 //
 //	MinLevel: Minimum level to perform reset
-//	Cost: Cost of the reset in Zen, max value: 200000000
-//	MultiplyCostPerResets: Multiply cost by number of resets, 0/1
-//	MaxCost: maximum cost of reset in Zen, max value: MaxCost
 //	MinVipType: Minimum VIP Level to use Restets System
-//	MaxReset: Maximum number of resets
+//	MaxResets: Maximum number of resets
 //
 // ### ResetSystem::Settings ###
 //	RemoveEquipment: Determines whether equipment removal is required before performin reset, 0/1
@@ -46,7 +43,7 @@
 //	MoveToCharSelectWindow: Determines whether to force move to character selection screen after reset, 0/1
 //	StayOnPosition: Determines whether character should keep the same position after reset, 0/1
 //	MaxResetPoints: Maximum number of free level up points after reset
-//	LevelAfterRese: Regular level to set after reset, minimum value is 1, free stat points are calculated and added automatically
+//	LevelAfterReset: Regular level to set after reset, minimum value is 1, free stat points are calculated and added automatically
 //	MasterLevelAfterReset: Master level to set after reset, used if set greater than 0, free stat points are calculated and added automatically
 //
 // ### ResetSystem::DynamicResetRangeList::Range ###
@@ -55,6 +52,15 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ It is important to keep MaxReset higher than MinReset and make sure all ranges are unique and ordered increasing way
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	CoinType: Type of coin to charge per reset
+//		~ 0: Zen
+//		~ 1: WCoin
+//		~ 2: Goblin Point
+//		~ 3: Ruud
+//
+//	Cost: Cost of the single reset, max value: 200000000
+//	MultiplyCostPerResets: Multiply cost by number of resets, 0/1
+//	MaxCost: Maximum cost of reset, if MAX is used as value then attribute is set to 200000000
 //	MilestoneID: A milestone reset rule ID to execute upon reset, -1 if do milestone aplies to specific range, see MilestonesRewardList section
 //	RewardSetID: A regular reset rule ID to execute upon reset, -1 if do milestone aplies to specific range, see RegResetsRewardList section
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,20 +99,20 @@
 -->
 
 <ResetSystem Enable="1">
-<Requirements MinLevelMode="0" MinLevel="400" Cost="5000000" MultiplyCostPerResets="1" MaxCost="150000000" MaxReset="100" MinVipType="0" />
+<Requirements MinLevelMode="0" MinLevel="400" MaxResets="100" MinVipType="0" />
 <Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" LevelAfterReset="1" MasterLevelAfterReset="0" />
 
 	<DynamicResetRangeList> <!-- First rule that matches player requirements will be applied, therefore order of entries matters -->
-		<Range MinReset="0" MaxReset="10" MilestoneID="0" RewardSetID="0" />
-		<Range MinReset="11" MaxReset="20" MilestoneID="0" RewardSetID="0" />
-		<Range MinReset="21" MaxReset="30" MilestoneID="1" RewardSetID="1" />
-		<Range MinReset="31" MaxReset="40" MilestoneID="1" RewardSetID="1" />
-		<Range MinReset="41" MaxReset="50" MilestoneID="2" RewardSetID="2" />
-		<Range MinReset="51" MaxReset="60" MilestoneID="2" RewardSetID="2" />
-		<Range MinReset="61" MaxReset="70" MilestoneID="3" RewardSetID="3" />
-		<Range MinReset="71" MaxReset="80" MilestoneID="3" RewardSetID="3" />
-		<Range MinReset="81" MaxReset="90" MilestoneID="4" RewardSetID="4" />
-		<Range MinReset="91" MaxReset="MAX" MilestoneID="4" RewardSetID="4" />
+		<Range MinReset="0" MaxReset="10" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="0" RewardSetID="0" />
+		<Range MinReset="11" MaxReset="20" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="0" RewardSetID="0" />
+		<Range MinReset="21" MaxReset="30" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="1" RewardSetID="1" />
+		<Range MinReset="31" MaxReset="40" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="1" RewardSetID="1" />
+		<Range MinReset="41" MaxReset="50" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="2" RewardSetID="2" />
+		<Range MinReset="51" MaxReset="60" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="2" RewardSetID="2" />
+		<Range MinReset="61" MaxReset="70" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="3" RewardSetID="3" />
+		<Range MinReset="71" MaxReset="80" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="3" RewardSetID="3" />
+		<Range MinReset="81" MaxReset="90" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="4" RewardSetID="4" />
+		<Range MinReset="91" MaxReset="MAX" CoinType="0" Cost="5000000" MultiplyCostPerResets="1" MaxCost="MAX" MilestoneID="4" RewardSetID="4" />
 	</DynamicResetRangeList>
 	
 	<RegResetsRewardList> <!-- Item issued to Gremory Case -->

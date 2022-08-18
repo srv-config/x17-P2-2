@@ -485,7 +485,7 @@
 		<Msg ID="456" Text="[GM] DS opened!" />
 		<Msg ID="457" Text="[GM] CC will be available in 1 minute!" />
 		<Msg ID="458" Text="[ResetCMD] Sorry, you need %d level" />
-		<Msg ID="459" Text="[ResetCMD] Sorry, you need %d Money" />
+		<Msg ID="459" Text="[ResetCMD] Sorry, you need %d %s" />
 		<Msg ID="460" Text="[ResetCMD] Sorry, you have reached maximum reset" />
 		<Msg ID="461" Text="[ResetCMD] Sorry, you have to de-equip items." />
 		<Msg ID="462" Text="Reset successfully, your reset count is now %d." />
@@ -833,6 +833,7 @@
 		<Msg ID="807" Text="%s is on channel %d where local currency is %s. Move to the channel to continue trading with him" />
 		<Msg ID="808" Text="Click me again to go." />
 		<Msg ID="809" Text="The authorization relationship with the awakening monster has been reset." />
+		<Msg ID="810" Text="No matching reset rule found, contact Administrator." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
