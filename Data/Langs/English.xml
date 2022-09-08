@@ -834,6 +834,11 @@
 		<Msg ID="808" Text="Click me again to go." />
 		<Msg ID="809" Text="The authorization relationship with the awakening monster has been reset." />
 		<Msg ID="810" Text="No matching reset rule found, contact Administrator." />
+		<Msg ID="811" Text="Open Hunt Shop." />
+		<Msg ID="812" Text="Open Hunt Ware." />
+		<Msg ID="813" Text="Decreased Stat points." />
+		<Msg ID="814" Text="Decreased %d Stat points." />
+		<Msg ID="815" Text="Jewel upgrade failed!" />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />

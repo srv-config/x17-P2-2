@@ -632,6 +632,86 @@ function Defense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, 
 	return SkillEffect, SkillTime
 end
 
+-- SkillID: 1224, Improve Elemental Attack Power Enhancement
+function ElementalAttack_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy, InEffect, InTime)
+	SkillEffect = InEffect -- result of formula 36 from FormulaData.xml
+	SkillTime = InTime -- result of formula 37 from FormulaData.xml
+	
+	if (Index ~= TargetIndex) then
+		if (Class == CLASS_WIZARD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_KNIGHT) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_ELF) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_GLADIATOR) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_DARKLORD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_SUMMONER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_RAGEFIGHTER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_GROWLANCER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_RUNEWIZARD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_LIGHTWIZARD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_LEMURIAMAGE) then
+			SkillEffect = InEffect
+		end
+	elseif (Index == TargetIndex) then
+		SkillEffect = InEffect
+	end
+	
+	return SkillEffect, SkillTime
+end
+
+-- SkillID: 1225, Improve Elemental Defense Enhancement
+function ElementalDefense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Energy, InEffect, InTime)
+	SkillEffect = InEffect -- result of formula 38 from FormulaData.xml
+	SkillTime = InTime -- result of formula 37 from FormulaData.xml
+	
+	if (Index ~= TargetIndex) then
+		if (Class == CLASS_WIZARD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_KNIGHT) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_ELF) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_GLADIATOR) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_DARKLORD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_SUMMONER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_RAGEFIGHTER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_GROWLANCER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_RUNEWIZARD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_LIGHTWIZARD) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_LEMURIAMAGE) then
+			SkillEffect = InEffect
+		end
+	elseif (Index == TargetIndex) then
+		SkillEffect = InEffect
+	end
+	
+	return SkillEffect, SkillTime
+end
+
 -- SkillID: 1230, Bless Enhancement Skill
 function Bless_4thEnchant_Elf(Energy)
 	local SkillEffect = Energy / 100

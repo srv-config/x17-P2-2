@@ -12,7 +12,8 @@
 // ### ItemBag::BagConfig ###
 //	Name: Name of an Item or Monster
 //	ItemRate: Chance to get an item from the bag, n/10000
-//	SetItemRate: Drop rate of random set item selected from entire pool of available ancients, n/10000, can be 0
+//	SetItemRate: Drop rate of random set item selected from entire pool of available ancients, rate is being drawn individually for every drop attempt, n/10000, can be 0
+//	SetItemCount: Number of set items to drop if SetItemRate is set to value greater than 0
 //	MasterySetItemInclude: If set to 1 the set item drop based on SetItemRate will include mastery set items, otherwise set to 0
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ The SetItemRate is not available for all EVENT_BAG types. Define Set Items via Drop sections manually instead
@@ -25,6 +26,11 @@
 //			 0: Firecracker effect type
 //			 2: Silver and Gold Medals effect type, Box of Heaven
 //			58: Cherry Blossom Play Box effect type
+//
+//	PartyDropRate: Chance to apply party drop, if chance rate draw succeed the bag will be executed individually for every party member within party range of 9 tiles from party master, does not apply to INVENTORY bag type, n/10000
+//	PartyShareType: Determined mode of dividing share among party members, includes Coin, Ruud and Zen
+//		~ 0: Share proportionally to number of party members, e.g. coin reward is set to 100 and party members is 5, so each party member within 9 tiles from party master will receive 20 coins.
+//		~ 1: Each party member receives full coint amount configured in bag
 //
 //	BagUseRate: Defines probability to use Bag, n/10000.
 //				If value is lower than 10000 (100%) then a draw is performed between item bag and another drop system in hierarchy
@@ -39,13 +45,28 @@
 //	Enable: Activates or deactivates the coin award, 0/1
 //	CoinType: 0 - WCoin, 1 - Goblin Point
 //	CoinValue: Points count to award with
+//	PlayerMinLevel: Minimum level of player to apply Coin (must be lower or equal to PlayerMaxLevel)
+//	PlayerMaxLevel: Maximum level of player to apply Coin (must be greater or equal to PlayerMinLevel)
+//	PlayerMinReset: Minimum reset of player to apply Coin (must be lower or equal to PlayerMaxReset)
+//	PlayerMaxReset: Maximum reset of player to apply Coin (must be greater or equal to PlayerReset)
 //
 // ### ItemBag::Ruud ### - awards with configured count of Ruud basing of the rate (if Ruud is awarded then no item will be given)
 //	GainRate: Chance rate to award with configured amount of Ruud, n/10000, can be 0
 //	MinValue: Minimum amount of Ruud to award with
 //	MaxValue: Maximum amount of Ruud to award with
+//	PlayerMinLevel: Minimum level of player to apply Ruud (must be lower or equal to PlayerMaxLevel)
+//	PlayerMaxLevel: Maximum level of player to apply Ruud (must be greater or equal to PlayerMinLevel)
+//	PlayerMinReset: Minimum reset of player to apply Ruud (must be lower or equal to PlayerMaxReset)
+//	PlayerMaxReset: Maximum reset of player to apply Ruud (must be greater or equal to PlayerReset)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If MAX is used as value for PlayerMaxLevel attribute then the attribute is being set to sum of MaxNormalLevel and MaxMasterLevel from Common.ini
+//~~ If MAX is used as value for PlayerMaxReset attribute then the attribute is being set to value of MaxResets from Resetystem.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// ### ItemBag::DropAllow ### - by setting lower class the higher one automatically is being allowed
+// ### DropSection ###
+//	DisplayName: Name of section, displayed within logs and used by ToolKit Premium editor
+//
+// ### ItemBag::DropSection::DropAllow ### - by setting lower class the higher one automatically is being allowed
 //	DW: 0 - Disallow, 1 - Dark Wizard, 2 - Soul Master, 3 - Grand Master, 4 - Soul Wizard
 //	DK: 0 - Disallow, 1 - Dark Knight, 2 - Blade Knight, 3 - Blade Master, 4 - Dragon Knight
 //	ELF: 0 - Disallow, 1 - Fairy Elf, 2 - Muse Elf, 3 - High Elf, 4 - Noble Elf
@@ -61,13 +82,16 @@
 //	LM: 0 - Disallow, 1 - Lemuria Mage, 2 - Warmage, 3 - Archmage, 4 - Mystic Mage
 //	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
 //	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
+//	PlayerMinReset: Minimum reset of player to apply drop of items from the section (must be lower or equal to PlayerMaxReset)
+//	PlayerMaxReset: Maximum reset of player to apply drop of items from the section (must be greater or equal to PlayerReset)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//~~ For easier configuration use PlayerMaxLevel="MAX" to configure maximum level available for the server (automated sum of MaxNormalLevel and MaxMasterLevel)
+//~~ If MAX is used as value for PlayerMaxLevel attribute then the attribute is being set to sum of MaxNormalLevel and MaxMasterLevel from Common.ini
+//~~ If MAX is used as value for PlayerMaxReset attribute then the attribute is being set to value of MaxResets from Resetystem.xml
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 //	MapNumber: Map Number the drop of items applies to, -1 for all maps
 //
-// ### DropAllow::Drop ###
+// ### ItemBag::DropSection::DropAllow::Drop ###
 //	Rate: Drop rate of items from the section, n/10000
 //	Type: Defines the way items drop from the section
 //		~ 0: Regular drop, random items of configured count
@@ -75,7 +99,7 @@
 //
 //	Count: Items count to be dropped at a time - option ignored for LuckyCoin, MuRuumy, LordMix and Cherry Blosson rewards, always 1
 //
-// ### DropAllow::Drop::Item ###
+// ### ItemBag::DropSection::DropAllow::Drop::Item ###
 //	Cat: Category of the item, refer to \Data\Items\ItemList.xml
 //	Index: Index of the item, refer to \Data\Items\ItemList.xml
 //	ItemMinLevel: Minimum level the item should drop with (must be lower or equal to ItemMaxLevel)
@@ -123,7 +147,13 @@
 //	KindA: Attribute automatically assigned on a basis on ItemList.xml configuration, no necessary to be defined in bag
 //	Duration: Allows to drop expiable item, seconds (not every item is suitable for period items system, please test before putting on live server)
 //
-// Bag Structure supports multiple DropAllow sections. Each DropAllow section may have multiple Drop sub-sections.
+//~~ Item Bag structure explanation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Bag structure supports multiple DropSections. Each DropSections supports multiple DropAllow sub-sections. Each DropAllow section may have multiple Drop sub-sections.
+//
+//~~ Understanding DropSection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Every item bag (except INVENTORY bag type) support ability to define multiple DropSection. It is used to drop two or more items from different sections of different rules for single player, check Item_(14,354,0)_PlayTime_Box.xml for examples.
+//
+//~~ Understanding DropAllow/Drop sections selection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Qualified (player meets requirements of) DropAllow section is selected on basis of its weight. Weight (priority) of DropAllow section is equal to sum of all Rates of Drop sections and divided by number of Drop sections contained inside DropAllow section.
 // If there are multiple DropAllow sections of same weight then DropAllow section is selected randomly from pool of all qualified DropAllow sections of same weight.
 //
