@@ -64,6 +64,10 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### DropSection ###
+//	UseMode: Determines way the section is being used like
+//		~ -1: Used for party and non-party drop
+//		~ 0: Used while not in party
+//		~ 1: Used for party only
 //	DisplayName: Name of section, displayed within logs and used by ToolKit Premium editor
 //
 // ### ItemBag::DropSection::DropAllow ### - by setting lower class the higher one automatically is being allowed
