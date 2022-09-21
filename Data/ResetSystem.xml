@@ -99,7 +99,7 @@
 -->
 
 <ResetSystem Enable="1">
-<Requirements MinLevelMode="0" MinLevel="400" MaxResets="100" MinVipType="0" />
+<Requirements MinLevelMode="0" MinLevel="400" MaxResets="100" MinVipType="-1" />
 <Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" LevelAfterReset="1" MasterLevelAfterReset="0" />
 
 	<DynamicResetRangeList> <!-- First rule that matches player requirements will be applied, therefore order of entries matters -->

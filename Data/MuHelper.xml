@@ -12,7 +12,7 @@
 //	Enable: Enable/Disable Integrated Helper system in Game, 0/1
 //	MinLevel: Minimum level required to use the Helper
 //	MinVIPLevel: Min level of VIP type to use Mu Helper
-//		0: Everybody
+//		-1: Everybody
 //		1: Bronze VIP
 //		2: Silver VIP
 //		3: Gold VIP
@@ -46,7 +46,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<MuHelper Enable="1" MinLevel="80" MinVipLevel="0">
+<MuHelper Enable="1" MinLevel="80" MinVipLevel="-1">
 	<Cost GeneralMultiplier="7.0" DiscountMultiplier="1.0" EventMultiplier="1.0" ChargeInterval="5" />
 	<Guardian RepairEnable="1" Durability="50" />
 	
