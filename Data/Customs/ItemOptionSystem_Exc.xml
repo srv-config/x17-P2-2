@@ -62,7 +62,11 @@
 //		~ 42: Elemental Damage Increase
 //		~ 43: Elemental Defense Increase
 //		~ 46: Stun 4th Tree
-//
+//		~ 47: Nothing
+//		~ 48: Total invincibilty
+//		~ 49: Increase chaos mix rate +%
+//		~ 50: Increase Exp +%
+//		~ 51: Increase Item Drop rate +%
 //	OptionValue: Value to applt the option with
 //	Probability to apply the option on item, 0-100
 //	Ancient: If set to 1 the option will apply to specified set item only
@@ -76,7 +80,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<ItemOptionSystem Enabled="0" Password="12345678">
+<ItemOptionSystem Enabled="0" Password="WErt$4t3">
 	<Items>
 		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="0" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
 		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="1" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
@@ -138,5 +142,8 @@
 		<Text OptionId="46" ColorID="6" Title="Stun 4th Tree for %d seconds (Chance %d%%) " />	
 		<Text OptionId="47" ColorID="6" Title="Empty" />
 		<Text OptionId="48" ColorID="6" Title="Become invincible" />		
+		<Text OptionId="49" ColorID="6" Title="Increase Chaos Mix Rate +%d%%" />	
+		<Text OptionId="50" ColorID="6" Title="Increase Exp +%d%%" />	
+		<Text OptionId="51" ColorID="6" Title="Increase Item drop Rate +%d%%" />		
 	</OptionText>
 </ItemOptionSystem>
