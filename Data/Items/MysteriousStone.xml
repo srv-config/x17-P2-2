@@ -58,6 +58,18 @@
 		<Option Exc1="10" Exc2="3" Exc3="6" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="500" />
 	</Shields>
 
+	<FairyShields MaxExcOption="3"> <!-- Maximum 30 entries -->
+		<Option Exc1="10" Exc2="6" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="49500" />
+		<Option Exc1="10" Exc2="3" Exc3="6" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="1000" />
+		<Option Exc1="10" Exc2="4" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="13000" />
+		<Option Exc1="10" Exc2="7" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="263000" />
+		<Option Exc1="10" Exc2="3" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="5000" />
+		<Option Exc1="10" Exc2="4" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="13000" />
+		<Option Exc1="10" Exc2="4" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="266000" />
+		<Option Exc1="10" Exc2="6" Exc3="-1" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="2000" />
+		<Option Exc1="10" Exc2="3" Exc3="6" Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="500" />
+	</FairyShields>
+
 	<Weapons MaxExcOption="3"> <!-- Maximum 30 entries -->
 		<Option Exc1="0" Exc2="3" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="110000" />
 		<Option Exc1="0" Exc2="6" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="49500" />

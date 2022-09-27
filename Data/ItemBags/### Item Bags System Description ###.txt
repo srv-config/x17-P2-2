@@ -22,12 +22,16 @@
 //	MoneyDrop: Money (Zen) amount to drop from bag (must be greater than 0 if ItemRate is lower than 10000)
 //	IsPentagramForBeginnersDrop: Defines whether to drop Pentagram for Beginners with pre-defined Errtels for Beginners, 0/1
 //	BagUseEffect:
-//			-1: no effect
-//			 0: Firecracker effect type
-//			 2: Silver and Gold Medals effect type, Box of Heaven
-//			58: Cherry Blossom Play Box effect type
+//		~ -1: no effect
+//		~ 0: Firecracker effect type
+//		~ 2: Silver and Gold Medals effect type, Box of Heaven
+//		~ 58: Cherry Blossom Play Box effect type
 //
-//	PartyDropRate: Chance to apply party drop, if chance rate draw succeed the bag will be executed individually for every party member within party range of 9 tiles from party master, does not apply to INVENTORY bag type, n/10000
+//	PartyDropRate: Chance to apply party drop, if chance rate draw succeed the bag will be executed individually for every party member within party range of 9 tiles from party master with consideration of PartyOneDropOnly setting, does not apply to INVENTORY bag type, n/10000
+//	PartyOneDropOnly: Defines type of item drop for party
+//		~ 0: Bag is executed individually for item and coin award for every party member within party range of 9 tiles from party master, for coin share type check PartyShareType setting
+//		~ 1: Bag is executed once only for item drop but issues coins for every party member within party range of 9 tiles from party master, for coin share type check PartyShareType setting
+//			
 //	PartyShareType: Determined mode of dividing share among party members, includes Coin, Ruud and Zen
 //		~ 0: Share proportionally to number of party members, e.g. coin reward is set to 100 and party members is 5, so each party member within 9 tiles from party master will receive 20 coins.
 //		~ 1: Each party member receives full coint amount configured in bag
@@ -43,7 +47,9 @@
 //
 // ### ItemBag::AddCoin ### - awards with configured coin type and count
 //	Enable: Activates or deactivates the coin award, 0/1
-//	CoinType: 0 - WCoin, 1 - Goblin Point
+//	CoinType:
+//		~ 0: WCoin
+//		~ 1: Goblin Point
 //	CoinValue: Points count to award with
 //	PlayerMinLevel: Minimum level of player to apply Coin (must be lower or equal to PlayerMaxLevel)
 //	PlayerMaxLevel: Maximum level of player to apply Coin (must be greater or equal to PlayerMinLevel)
@@ -135,13 +141,13 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	SetItem: 0 ~ no ancient, 1 ~ ancient (random Tier of specified item) - must be added as ancient, otherwise option will be ignored
 //	SocketCount:
-//		0: no Socket slots
-//		1: up to one slot
-//		2: up to two slots
-//		3: up to three slots
-//		4: up to four slots
-//		5: up to five slots
-//	   -2: random count of socket slots (Pentagrams and Socket Items)
+//		~ 0: no Socket slots
+//		~ 1: up to one slot
+//		~ 2: up to two slots
+//		~ 3: up to three slots
+//		~ 4: up to four slots
+//		~ 5: up to five slots
+//	    ~ -2: random count of socket slots (Pentagrams and Socket Items)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Type attribute of the item must be set to 2 - refer to ItemList.xml
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
