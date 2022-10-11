@@ -41,22 +41,22 @@ function WizardDamageCalc(Strength, Dexterity, Vitality, Energy)
 end
 
 -- Character Damage - Fist Fighting - (Dark Knight, Blade Knight, Blade Master)
-function KnightDamageCalc(Strength, Dexterity, Vitality, Energy, IsStrongBeliefActive)
+function KnightDamageCalc(Strength, Dexterity, Vitality, Energy, IsSpecialBuff)
 	local AttackDamageMinLeft = 0
 	local AttackDamageMaxLeft = 0
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	if (IsStrongBeliefActive == 1) then
-		AttackDamageMinLeft = Strength / 6 -- Minimum Left Hand Damage
-		AttackDamageMinRight = Strength / 6 -- Minimum Right Hand Damage
-		AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
-		AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
-	else
+	if (IsSpecialBuff == 1) then -- Strong belief
 		AttackDamageMinLeft = Strength / 9 -- Minimum Left Hand Damage
 		AttackDamageMinRight = Strength / 9 -- Minimum Right Hand Damage
 		AttackDamageMaxLeft = Strength / 6 -- Maximum Left Hand Damage
 		AttackDamageMaxRight = Strength / 6 -- Maximum Right Hand Damage
+	else
+		AttackDamageMinLeft = Strength / 6 -- Minimum Left Hand Damage
+		AttackDamageMinRight = Strength / 6 -- Minimum Right Hand Damage
+		AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
+		AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
 	end
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
