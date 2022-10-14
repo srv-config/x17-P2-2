@@ -428,6 +428,11 @@ function LoadItemBag() -- Bags Load
 -- Bags for purpose of Scramble Word event
 	AddItemBag(BAG_EVENT, 400,0, 'Event_ScrambleWord_Level_1')
 	AddItemBag(BAG_EVENT, 401,0, 'Event_ScrambleWord_Level_2')
+	
+-- Bags for purpose of Hide and Seek event
+	AddItemBag(BAG_EVENT, 500,0, 'Event_HideAndSeek_Round_1')
+	AddItemBag(BAG_EVENT, 501,0, 'Event_HideAndSeek_Round_2')
+	AddItemBag(BAG_EVENT, 502,0, 'Event_HideAndSeek_Round_3')
 end
 
 -- ### /1/ Drop Item (using Item Bag Structure) ### --
