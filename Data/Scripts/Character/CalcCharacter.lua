@@ -519,7 +519,7 @@ function CalcDefenseSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy
 end
 
 -- Character Defense - General
-function CalcDefense(Class, Dexterity, IsSpecialBuff)
+function CalcDefense(Class, Strength, Dexterity, IsSpecialBuff)
 	local Defense = 0
 	
 	if(Class == CLASS_WIZARD) then
